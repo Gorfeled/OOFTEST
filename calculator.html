@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script type="text/javascript">
+    var x = null;
+    var y = null;
+    var sign = null;
+      function reset() {
+      x = null;
+      y = null;
+      sign = null;
+    }
+      function add() {
+        sign=0;
+      }
+      function subtract() {
+        sign=1;
+      }
+      function multiply() {
+        sign=2;
+      }
+      function divide() {
+        sign=3;
+      }
+      function equal() {
+        if(sign==0) {
+          z=x+y;
+        }
+        else if(sign==1) {
+          z=x-y;
+        }
+        else if(sign==2) {
+          z=x*y;
+        }
+        else if (sign==3) {
+          z=x/y;
+        }
+        alert(z);
+        reset();
+      }
+      function negative() {
+        if(sign==null){
+          x=x*-1;
+        }
+        else {
+          y=y*-1;
+        }
+      }
+      function one() {
+        if(sign==null){
+          x=(x*10)+1;
+        }
+        else {
+          y=(y*10)+1;
+        }
+      }
+      function two() {
+        if(sign==null){
+          x=(x*10)+2;
+        }
+        else {
+          y=(y*10)+2;
+        }
+      }
+      function three() {
+        if(sign==null){
+          x=(x*10)+3;
+        }
+        else {
+          y=(y*10)+3;
+        }
+      }
+      function four() {
+        if(sign==null) {
+          x=(x*10)+4;
+        }
+        else {
+          y=(y*10)+4;
+        }
+      }
+      function five() {
+        if(sign==null){
+          x=(x*10)+5;
+        }
+        else {
+          y=(y*10)+5;
+        }
+      }
+      function six() {
+        if(sign==null){
+          x=(x*10)+6;
+        }
+        else {
+          y=(y*10)+6;
+        }
+      }
+      function seven() {
+        if(sign==null){
+          x=(x*10)+7;
+        }
+        else {
+          y=(y*10)+7;
+        }
+      }
+      function eight() {
+        if(sign==null){
+          x=(x*10)+8;
+        }
+        else {
+          y=(y*10)+8;
+        }
+      }
+      function nine() {
+        if(sign==null){
+          x=(x*10)+9;
+        }
+        else {
+          y=(y*10)+9;
+        }
+      }
+      function zero() {
+        if(sign==null){
+          x=(x*10);
+        }
+        else {
+          y=(y*10);
+        }
+      }
+    </script>
+  </head>
+  <body> 
+    <img src = "https://image.flaticon.com/icons/svg/511/511148.svg" onclick="one()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511149.svg" onclick="two()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511150.svg" onclick="three()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/43/43869.svg" onclick="add()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/576/576866.svg" style="width:200px;height:200px;">
+    <br>
+    <img src = "https://image.flaticon.com/icons/svg/511/511151.svg" onclick="four()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511152.svg" onclick="five()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511153.svg" onclick="six()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/43/43625.svg" onclick="subtract()" style="width:100px;height:100px;">
+    <br>
+    <img src = "https://image.flaticon.com/icons/svg/511/511154.svg" onclick="seven()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511155.svg" onclick="eight()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511156.svg" onclick="nine()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/43/43823.svg" onclick="multiply()" style="width:100px;height:100px;">
+    <br>
+    <img src = "http://www.formica.com/~/media/emea/images/decors/eu/f0949.jpg" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/511/511147.svg" onclick="zero()" style="width:100px;height:100px;">
+    <img src = "http://www.formica.com/~/media/emea/images/decors/eu/f0949.jpg" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/43/43097.svg" onclick="divide()" style="width:100px;height:100px;">
+    <br>
+    <img src = "https://image.flaticon.com/icons/svg/511/511123.svg" onclick="reset()" style="width:100px;height:100px;">
+    <img src = "http://www.formica.com/~/media/emea/images/decors/eu/f0949.jpg" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/43/43472.svg" onclick="negative()" style="width:100px;height:100px;">
+    <img src = "https://image.flaticon.com/icons/svg/43/43296.svg" onclick="equal()" style="width:100px;height:100px;">
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </body>
+</html>
