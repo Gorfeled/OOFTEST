@@ -11,20 +11,26 @@
       x = null;
       y = null;
       sign = null;
-    }
+      document.getElementById('output').innerHTML="";
+      }
       function add() {
         sign=0;
+        document.getElementById('output').innerHTML+="+";
       }
       function subtract() {
         sign=1;
+        document.getElementById('output').innerHTML+="-";
       }
       function multiply() {
         sign=2;
+        document.getElementById('output').innerHTML+="*";
       }
       function divide() {
         sign=3;
+        document.getElementById('output').innerHTML+="/";
       }
       function equal() {
+        document.getElementById('output').innerHTML+="=";
         if(sign==0) {
           z=x+y;
         }
@@ -37,10 +43,9 @@
         else if (sign==3) {
           z=x/y;
         }
-        alert(z);
-        reset();
-      }
-      function negative() {
+        document.getElementById('output').innerHTML+=z+'\t';
+        }
+        function negative() {
         if(sign==null){
           x=x*-1;
         }
@@ -55,6 +60,7 @@
         else {
           y=(y*10)+1;
         }
+        document.getElementById('output').innerHTML+="1";
       }
       function two() {
         if(sign==null){
@@ -63,6 +69,7 @@
         else {
           y=(y*10)+2;
         }
+        document.getElementById('output').innerHTML+="2";
       }
       function three() {
         if(sign==null){
@@ -71,6 +78,7 @@
         else {
           y=(y*10)+3;
         }
+        document.getElementById('output').innerHTML+="3";
       }
       function four() {
         if(sign==null) {
@@ -79,6 +87,7 @@
         else {
           y=(y*10)+4;
         }
+        document.getElementById('output').innerHTML+="4";
       }
       function five() {
         if(sign==null){
@@ -87,6 +96,7 @@
         else {
           y=(y*10)+5;
         }
+        document.getElementById('output').innerHTML+="5";
       }
       function six() {
         if(sign==null){
@@ -95,6 +105,7 @@
         else {
           y=(y*10)+6;
         }
+        document.getElementById('output').innerHTML+="6";
       }
       function seven() {
         if(sign==null){
@@ -103,6 +114,7 @@
         else {
           y=(y*10)+7;
         }
+        document.getElementById('output').innerHTML+="7";
       }
       function eight() {
         if(sign==null){
@@ -111,6 +123,7 @@
         else {
           y=(y*10)+8;
         }
+        document.getElementById('output').innerHTML+="8";
       }
       function nine() {
         if(sign==null){
@@ -119,6 +132,7 @@
         else {
           y=(y*10)+9;
         }
+        document.getElementById('output').innerHTML+="9";
       }
       function zero() {
         if(sign==null){
@@ -127,10 +141,14 @@
         else {
           y=(y*10);
         }
+        document.getElementById('output').innerHTML+="0";
       }
     </script>
   </head>
-  <body> 
+  <body>
+    <font size="20">
+    <span id="output"></span> <br>
+    </font> 
     <img src = "https://image.flaticon.com/icons/svg/511/511148.svg" onclick="one()" style="width:100px;height:100px;">
     <img src = "https://image.flaticon.com/icons/svg/511/511149.svg" onclick="two()" style="width:100px;height:100px;">
     <img src = "https://image.flaticon.com/icons/svg/511/511150.svg" onclick="three()" style="width:100px;height:100px;">
